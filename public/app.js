@@ -16,7 +16,7 @@ var countLevel6 = 0;
 var countLevelfail = 0;
 
 function getWordle() {
-  fetch("http://localhost:3001/word")
+  fetch("https://wordle-faculdade-topicos.herokuapp.com/word")
     .then((response) => response.json())
     .then((json) => {
       word = json.toUpperCase();
